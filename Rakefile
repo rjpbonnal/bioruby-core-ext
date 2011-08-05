@@ -17,11 +17,14 @@ Jeweler::Tasks.new do |gem|
   gem.name = "bio-core-ext"
   gem.homepage = "http://github.com/helios/bioruby-core-ext"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{BioRuby core ext: plugins which require external library or tools so are not pure ruby plugins }
+  gem.description = %Q{BioRuby plugins with dependecies from external library or tools}
   gem.email = "ilpuccio.febo@gmail.com"
-  gem.authors = ["Raoul J.P. Bonnal"]
+  gem.authors = ["Raoul J.P. Bonnal", Pjotr Prins]
   # dependencies defined in Gemfile
+  gem.add_runtime_dependency 'bio-bwa'
+  gem.add_runtime_dependency 'bio-samtools'
+  gem.add_runtime_dependency 'bio-sge'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
