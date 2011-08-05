@@ -22,9 +22,10 @@ Jeweler::Tasks.new do |gem|
   gem.email = "ilpuccio.febo@gmail.com"
   gem.authors = ["Raoul J.P. Bonnal", Pjotr Prins]
   # dependencies defined in Gemfile
-  gem.add_runtime_dependency 'bio-bwa'
-  gem.add_runtime_dependency 'bio-samtools'
-  gem.add_runtime_dependency 'bio-sge'
+  gem.add_runtime_dependency 'bio-blastxmlparser', ["= 1.0.1"]
+  gem.add_runtime_dependency 'bio-bwa', ["= 0.2.2"]
+  gem.add_runtime_dependency 'bio-samtools',["= 0.2.4"]
+  gem.add_runtime_dependency 'bio-sge',["= 0.0.0"]
 end
 Jeweler::RubygemsDotOrgTasks.new
 
