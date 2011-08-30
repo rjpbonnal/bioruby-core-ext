@@ -20,7 +20,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = %Q{BioRuby core ext: plugins which require external library or tools so are not pure ruby plugins }
   gem.description = %Q{BioRuby plugins with dependecies from external library or tools}
   gem.email = "ilpuccio.febo@gmail.com"
-  gem.authors = ["Raoul J.P. Bonnal", Pjotr Prins]
+  gem.authors = ["Raoul J.P. Bonnal", "Pjotr Prins"]
   # dependencies defined in Gemfile
   gem.add_runtime_dependency 'bio-blastxmlparser', ["= 1.0.1"]
   gem.add_runtime_dependency 'bio-bwa', ["= 0.2.2"]
